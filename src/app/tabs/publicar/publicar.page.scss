@@ -1,0 +1,39 @@
+.center-title{
+  text-align: center;
+}
+
+.center-label{
+  width: 100%;
+
+  label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 6px);
+    height: 100%;
+    border: 1px solid black;
+    margin: 3px;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  .close{
+    top: 12px;
+    right: 12px;
+    position: absolute;
+
+    ion-icon{
+      color: black;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+}
+
+input[type=file]{
+  display: none;
+}

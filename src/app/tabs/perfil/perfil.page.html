@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-menu-button id="perfil-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="user-name">Cataldi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="main-header">
+    <div class="animation-wrapper">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+    </div>
+    <div align="center">
+      <ion-avatar align="center">
+        <img src="/assets/cataldinata.jpg" alt="imagem do usuário">
+      </ion-avatar>
+    </div>
+  </ion-grid>
+
+<ion-row class="ion-padding-horizontal">
+  <ion-col size="5">
+    <ion-item lines="none" class="ion-text-center">
+      <ion-icon name="people-outline" color="primary"></ion-icon>
+      <ion-label>
+        34
+        <p>Seguidores</p>
+      </ion-label>
+    </ion-item>
+  </ion-col>
+  <ion-col size="5">
+    <ion-item lines="none" class="ion-text-center">
+      <ion-icon name="map-outline" color="primary"></ion-icon>
+      <ion-label>
+        3
+        <p>Postagens</p>
+      </ion-label>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+<ion-list lines="full">
+  <ion-item>
+    <ion-label>
+      <ion-text>@Natã_Cataldi</ion-text>
+      <p><ion-text color="dark">Natã Cataldi</ion-text></p>
+    </ion-label>
+  </ion-item>
+
+  <p class="field" name="mensagem" placeholder="Editar Biografia" >💻 Olá, me chamo Natã <br>
+  📚 Sou aluno da ETE JBL<br>
+  👨🏻‍💻 Tec. Desenvolvimento de Sistemas
+  </p>
+
+  <div class="botoes">
+    <ion-button (click)="presentAlert()">Telefone</ion-button>
+    <ion-button (click)="presentEmail()">E-mail</ion-button>
+  </div>
+
+</ion-list>
+
+<ion-segment class="ion-padding-bottom" value="postagens">
+  <ion-segment-button value="postagens">
+    <ion-label>Postagens</ion-label>
+    <ion-icon name="map-outline"></ion-icon>
+  </ion-segment-button>
+
+  <ion-segment-button value="baixados">
+    <ion-label>Baixados</ion-label>
+    <ion-icon name="download-outline"></ion-icon>
+  </ion-segment-button>
+</ion-segment>
+
+  <div class="publi-user">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/equacao.jpg" alt="bilabilu">
+        </ion-col>
+        <ion-col>
+          <img src="/assets/equacao.jpg" alt="bilabilu">
+        </ion-col>
+        <ion-col>
+          <img src="/assets/equacao.jpg" alt="bilabilu">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+</ion-content>

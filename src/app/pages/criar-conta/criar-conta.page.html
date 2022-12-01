@@ -1,0 +1,40 @@
+<ion-content fullscreen="true">
+  <section class="area-cadastro">
+    <div>
+      <h3>Bem-vindo ao</h3>
+      <img src="/assets/Logo.png">
+    </div>
+
+    <div class="login">
+      <form>
+        <ion-text class="page-title"><h2>Cadastrar</h2></ion-text>
+        <input type="text" [(ngModel)]="userRegister.nome" name="nome" placeholder="Nome">
+        <input type="text" [(ngModel)]="userRegister.email" name="email" placeholder="E-mail" autofocus>
+        <input type="password" [(ngModel)]="userRegister.password" name="senha" placeholder="Senha">
+        <button type="submit" [disabled]="disableButton" (click)="register()">Criar</button>
+        <div class="accounts">
+          <button class="round-ico" [disabled]="disableButton" (click)="googleSignIn()">
+            <ion-icon name="logo-google"></ion-icon>
+          </button>
+          <button class="round-ico" [disabled]="disableButton" (click)="githubSignIn()">
+            <ion-icon name="logo-github"></ion-icon>
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="logar">
+      <p>Já tem uma conta?</p>
+      <a routerLink="/login">Fazer login</a>
+    </div>
+
+    <div class="animation-wrapper">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+    </div>
+
+  </section>
+</ion-content>

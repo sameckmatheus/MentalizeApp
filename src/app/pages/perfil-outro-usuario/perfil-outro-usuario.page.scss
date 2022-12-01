@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+.user-name{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header {
+    height: 25vh;
+    width: 120%;
+    background-image: -ms-linear-gradient( 136deg, #e0c3fc 0%, #275fcf, #8dc4fc 100%);
+	background-image: -moz-linear-gradient( 136deg, #e0c3fc 0%, #275fcf, #8ec5fc 100%);
+    background-image: -webkit-linear-gradient( 45deg, #1e0033, #5160ff);
+	background-size: 200% 200%;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 1px 10px #f4f5f8;
+    border-radius: 0 0 50% 50%;
+    margin-left: -4.5vh;
+    margin-top: -5px;
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+    animation: colors 15s ease infinite;
+    div{
+        transform: translateY(2vh);
+        ion-avatar{
+            width: 15vh;
+            height: 15vh;
+            background: #f4f5f8;
+            margin-bottom: 5px;
+            border: 7px solid #3880ff;
+            margin-left: -3%;
+        }
+    }
+
+    /* Background animation */
+    @keyframes colors {
+        0% {
+            background-position: 0% 25%;
+        }
+        25%{
+            background-position: 25% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
+ion-row {
+    margin-top: -55px;
+    ion-col {
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        ion-item {
+            width: 94%;
+            margin: auto;
+            border: 1px solid #f4f5f8;
+            box-shadow: 1px #222428;
+            border-radius: 5px;
+            ion-label {
+                font-size: 14px;
+                font-weight: bold;
+                p {
+                    font-size: 10px;
+                }
+            }
+            ion-icon {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+ion-list {
+    margin-top: -1%;
+    ion-item {
+        margin-top: 1vh;
+        ion-label {
+            font-size: 14px;
+            font-weight: bold;
+            p {
+                margin-top: 1%;
+                font-size: 15px;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+
+.publi-user {
+    margin-top: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around 3%;
+}
+
+.post-title {
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    ion-icon{
+        margin-left: 25%;
+        padding: 0;
+    }
+        p{
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: bold;
+   /* text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;*/
+}
+}
