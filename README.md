@@ -29,6 +29,8 @@ O App Mentalize conta com as seguintes funcionalidades:
 O App Mentalize foi desenvolvido utilizando as seguintes tecnologias:
 
 *   Angula JS: para a criação da interface do usuário em dispositivos móveis.
+*   Typescript: para realizar o gerenciamento dos Providers.
+*   NodeJS: para intermediar as conexões com API's externa como o Firebase, por exemplo.
 *   Firebase: para a autenticação de usuários, armazenamento de dados e gerenciamento das funcionalidades em tempo real.
 
 ## Como contribuir ?
