@@ -1,13 +1,14 @@
 # App Mentalize
 
-## Dica
-
 Para uma melhor execução do preview do projeto, realize a seguinte configuração em seu terminal no VSCode:
 ```
 Para permitir a execução de scripts sem qualquer restrição, digite o comando abaixo:
 Set-ExecutionPolicy Unrestricted
 ```
-
+```
+Para permitir a execução da aplicação em sua máquina, digite um dos comandos abaixo:
+ionic serve -l / ionic serve
+```
 ## Descrição
 
 Projeto criado para apresentação de TCC na ETE Jurandir Bezerra Lins, no município de Igarassu, Pernambuco. O App Mentalize traz uma proposta inovadora para revolucionar a maneira como estudantes de diferentes localidades interagem, permitindo o compartilhamento de conhecimento e experiências.
