@@ -2,12 +2,12 @@
 
 Para uma melhor execução do preview do projeto, realize a seguinte configuração em seu terminal no VSCode:
 
-Para permitir a execução de scripts sem qualquer restrição, digite o comando abaixo:
+⚠️ Para permitir a execução de scripts sem qualquer restrição, digite o comando abaixo:
 ```
 Set-ExecutionPolicy Unrestricted
 ```
 
-Para permitir a execução da aplicação em sua máquina, digite um dos comandos abaixo:
+⚠️ Para permitir a execução da aplicação em sua máquina, digite um dos comandos abaixo:
 ```
 ionic serve -l / ionic serve
 ```
