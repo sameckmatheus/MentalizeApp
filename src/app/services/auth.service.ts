@@ -1,5 +1,5 @@
 /* eslint-disable new-parens */
-import { GoogleAuthProvider } from '@angular/fire/auth';
+import { FacebookAuthProvider, GoogleAuthProvider } from '@angular/fire/auth';
 import { GithubAuthProvider } from '@angular/fire/auth';
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
@@ -57,6 +57,21 @@ export class AuthService {
 
   async githubSignIn() {
     const request = await this.auth.signInWithPopup(new GithubAuthProvider);
+    const uid = request.user.uid;
+
+    this.userCollection.doc(uid).get().subscribe(res => {
+      if(!res.exists) {
+        this.userCollection.doc(uid).set({
+          email: request.user.email,
+          nome: request.user.displayName,
+          imagem: request.user.photoURL
+        });
+      }
+    });
+  }
+
+  async facebook() {
+    const request = await this.auth.signInWithPopup(new FacebookAuthProvider);
     const uid = request.user.uid;
 
     this.userCollection.doc(uid).get().subscribe(res => {
